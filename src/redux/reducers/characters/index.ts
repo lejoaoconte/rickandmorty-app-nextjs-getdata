@@ -1,5 +1,5 @@
-import { CharacterType } from "../../types";
-import * as types from "../../types/reducers";
+import { CharacterType } from "src/redux/types";
+import * as types from "src/redux/types/reducers";
 
 export interface CharacterState {
   character: CharacterType[];

@@ -1,4 +1,5 @@
-import homeLogo from "../../assets/homeLogo.png";
+import homeLogo from "src/assets/homeLogo.png";
+
 import { Container } from "./styles";
 
 export function Loading() {

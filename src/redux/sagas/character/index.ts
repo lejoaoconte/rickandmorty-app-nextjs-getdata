@@ -1,8 +1,9 @@
 import { all, call, put, takeLatest } from "@redux-saga/core/effects";
-import { getCharacterFailure, getCharacterSuccess } from "../../actions";
-import api from "../../api";
-import { CharacterType } from "../../types";
-import * as types from "../../types/reducers";
+
+import { getCharacterFailure, getCharacterSuccess } from "src/redux/actions";
+import { CharacterType } from "src/redux/types";
+import * as types from "src/redux/types/reducers";
+import api from "src/redux/api";
 
 let characterApi: CharacterType[];
 
