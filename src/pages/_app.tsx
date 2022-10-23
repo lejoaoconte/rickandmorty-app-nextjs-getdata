@@ -1,16 +1,16 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { Provider } from "react-redux";
 
-import { ThemeProvider } from "styled-components";
+import store from "../redux";
 
 import { GlobalStyle } from "../styles/GlobalStyles";
-import { theme } from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <Provider store={store}>
       <Head>
-        <title>Create Next App</title>
+        <title>Rick and Morty | Character List</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
-    </ThemeProvider>
+    </Provider>
   );
 }
 
