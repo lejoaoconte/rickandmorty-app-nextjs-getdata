@@ -1,9 +1,12 @@
-import Router from "next/router";
 import { useEffect } from "react";
-import { Loading } from "../components/Loading";
-import { getCharacterRequest } from "../redux";
-import { CharacterState } from "../redux/reducers/characters";
-import { useAppDispatch, useAppSelector } from "../redux/useAppSelector";
+
+import Router from "next/router";
+
+import { Loading } from "src/components/Loading";
+
+import { getCharacterRequest } from "src/redux";
+import { CharacterState } from "src/redux/reducers/characters";
+import { useAppDispatch, useAppSelector } from "src/redux/useAppSelector";
 
 export default function Home() {
   const characterState: CharacterState = useAppSelector(

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { ListItem } from "src/components/ListItem";
 import { Loading } from "../../components/Loading";
 import { CharacterType } from "../../redux";
 import { CharacterState } from "../../redux/reducers/characters";
 import { useAppSelector } from "../../redux/useAppSelector";
+import { Container } from "./styles";
 
 export default function List() {
   const characterState: CharacterState = useAppSelector(
@@ -21,9 +23,11 @@ export default function List() {
     <Loading />;
   } else {
     return (
-      <div>
-        <h1>List</h1>
-      </div>
+      <Container>
+        {character.map(({ id, image, name }: CharacterType) => (
+          <ListItem key={id} id={id} name={name} image={image} />
+        ))}
+      </Container>
     );
   }
 }
