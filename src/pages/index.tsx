@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import Router from "next/router";
+import { useRouter } from "next/router";
 
 import { Loading } from "src/components/Loading";
 
@@ -9,6 +9,7 @@ import { CharacterState } from "src/redux/reducers/characters";
 import { useAppDispatch, useAppSelector } from "src/redux/useAppSelector";
 
 export default function Home() {
+  const router = useRouter();
   const characterState: CharacterState = useAppSelector(
     (state) => state.character
   );
@@ -29,7 +30,7 @@ export default function Home() {
   useEffect(() => {
     dispatch(getCharacterRequest(""));
 
-    Router.push("/list");
+    router.push("/list");
   }, []);
 
   if (loading) return <Loading />;

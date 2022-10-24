@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+
 import { ListItem } from "src/components/ListItem";
-import { Loading } from "../../components/Loading";
-import { CharacterType } from "../../redux";
-import { CharacterState } from "../../redux/reducers/characters";
-import { useAppSelector } from "../../redux/useAppSelector";
+import { Loading } from "src/components/Loading";
+
+import { CharacterType } from "src/redux";
+import { CharacterState } from "src/redux/reducers/characters";
+import { useAppSelector } from "src/redux/useAppSelector";
+
 import { Container } from "./styles";
 
 export default function List() {

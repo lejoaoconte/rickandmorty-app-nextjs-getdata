@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerItem = styled.div`
+export const ContainerItem = styled.button`
   width: 100%;
   height: fit-content;
 
@@ -8,6 +8,8 @@ export const ContainerItem = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  background: none;
 
   gap: 16px;
 
@@ -29,6 +31,7 @@ export const ContainerItem = styled.div`
   p {
     font-size: 1.5rem;
     font-weight: bold;
+    color: ${({ theme }) => theme["primary-text"]};
   }
 
   &:hover {
