@@ -10,9 +10,9 @@ In general I got data from <a href="https://rickandmortyapi.com/api/" target="_b
 
 Illustrations below:
 <div style="display:flex; align-items:center; flex-direction:row; gap:20px; flex-wrap:wrap; justify-content:center;">
-<img width="500px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image1.png?raw=true" />
-<img width="500px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image2.png?raw=true" />
-<img width="500px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image6.png?raw=true" />
+<img width="400px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image1.png?raw=true" />
+<img width="400px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image2.png?raw=true" />
+<img width="400px" src="https://github.com/lejoaoconte/rickandmorty-app-nextjs-getdata/blob/main/illustrations/image6.png?raw=true" />
 </div>
 <br />
 <div style="display:flex; align-items:center; flex-direction:row; gap:10px; flex-wrap:wrap; justify-content:center;">
